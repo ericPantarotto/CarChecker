@@ -1,9 +1,26 @@
-﻿@page "/"
+﻿@layout HeaderLayout
+@page "/"
 
 <PageTitle>Index</PageTitle>
+
+<header>
+    <div class="toolbar">
+        <button class="toolbar-item" @onclick="() => loginStatusOverlay.Show()">☰</button>
+    </div>
+    <div class="title">Welcome, Eric</div>
+</header>
+
+<Overlay @ref="loginStatusOverlay" OverlayStyle="Overlay.Style.Top" CssClass="home-overlay">
+        <LoginStatus />
+</Overlay>
+
 
 <h1>Hello, world!</h1>
 
 Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<input class="cool-input" placeholder="Eric Carlier" />
+
+@code{
+    Overlay loginStatusOverlay;
+}

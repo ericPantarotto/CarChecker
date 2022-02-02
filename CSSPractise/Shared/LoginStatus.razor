@@ -1,0 +1,40 @@
+﻿@inject NavigationManager Navigation
+
+
+    <div class="username">
+        <img src="user.svg" />
+        <div>
+            <div><strong>Eric  Carlier</strong></div>
+            <div>eric.carlier@gmail.com</div>
+        </div>
+    </div>
+    <div class="user-actions">
+        <a class="text-button" >
+            Manage account
+        </a>
+        <button class="text-button" >
+            Log out
+        </button>
+    </div>
+
+    <nav class="flex-column">
+        <NavLink class="nav-link" href="counter">
+            <span class="oi oi-plus" aria-hidden="true"></span> Counter
+        </NavLink>
+        <NavLink class="nav-link" href="fetchdata">
+            <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+        </NavLink>
+    </nav>
+
+ 
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}
