@@ -16,6 +16,8 @@
 </button>
 <button class="btn btn-secondary" @onclick="OnClearRequested">Cancel</button>
 
+<MyWeatherRandomizer CounterWeather=CurrentCount/>
+
 @code {
     [Parameter] public int CurrentCount { get; set; }
     [Parameter] public EventCallback<int> OnCounterChanged { get; set; }

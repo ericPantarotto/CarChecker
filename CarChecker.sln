@@ -8,7 +8,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarChecker.Client", "Client
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarChecker.Shared", "Shared\CarChecker.Shared.csproj", "{C5DD5CF5-8462-4433-B463-E3F3EA6F0FA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComponentsPractice", "ComponentsPractice\ComponentsPractice.csproj", "{8DACEA11-955D-499C-816F-C2677E036F24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComponentsPractice", "ComponentsPractice\ComponentsPractice.csproj", "{8DACEA11-955D-499C-816F-C2677E036F24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
