@@ -1,13 +1,13 @@
 {
-  "name": "Car Checker",
-  "short_name": "Car Checker",
+  "name": "Car Long",
+  "short_name": "Car",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#e7e7e7",
   "theme_color": "#E85757",
   "icons": [
     {
-      "src": "icon-512.png",
+      "src": "Automotive.png",
       "type": "image/png",
       "sizes": "512x512"
     }
