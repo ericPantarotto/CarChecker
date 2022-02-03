@@ -1,0 +1,17 @@
+{
+  "name": "Practice App",
+  "short_name": "PWA",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FFBD891F",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "app-icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+    
+  ]
+}
