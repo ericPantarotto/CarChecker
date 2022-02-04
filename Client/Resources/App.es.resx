@@ -226,6 +226,10 @@
     <value>Faro derecho</value>
     <comment>Name of part of car</comment>
   </data>
+  <data name="HW" xml:space="preserve">
+    <value>Hola El Mundo!</value>
+    <comment>TC Example</comment>
+  </data>
   <data name="Last updated:" xml:space="preserve">
     <value>Última actualizacion:</value>
   </data>

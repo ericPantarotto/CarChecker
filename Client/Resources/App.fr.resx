@@ -117,10 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="HW" xml:space="preserve">
-    <value>Hello World!</value>
+  <data name="Enter license number:" xml:space="preserve">
+    <value>Entrez votre plaque d'immatriculation:</value>
   </data>
-  <data name="LicenseNumberIncorrectFormat" xml:space="preserve">
-    <value>The license number is not in the correct format.</value>
+  <data name="HW" xml:space="preserve">
+    <value>Salut Monde!</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>Plaque d'immatriculation</value>
+  </data>
+  <data name="Welcome, {0}!" xml:space="preserve">
+    <value>Bienvenue, {0}!</value>
   </data>
 </root>

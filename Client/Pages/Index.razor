@@ -21,6 +21,7 @@
     <EditForm class="home-options" Model="this" OnValidSubmit="FindVehicle">
         <DataAnnotationsValidator />
 
+        <p>@Localize["HW"]</p>
         <p>@Localize["Enter license number:"]</p>
         <Autocomplete @bind-Value="@LicenseNumber" Choices="@GetLicenseAutocompleteItems"
                       OnItemChosen="FindVehicle" class="find-by-license-plate" placeholder="@Localize["License"]" />
