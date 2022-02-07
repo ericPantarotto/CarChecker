@@ -81,6 +81,7 @@
 
     async Task GoBack()
     {
+        await JS.InvokeVoidAsync("alert", "The GoBack has been hit");
         if (!editContext.IsModified() || await JS.InvokeAsync<bool>("confirm", Localize["Discard changes?"].Value))
         {
             await JS.InvokeVoidAsync("history.back");
