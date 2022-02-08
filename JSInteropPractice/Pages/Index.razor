@@ -1,4 +1,5 @@
 ﻿@page "/"
+@inject IJSRuntime JS
 
 <PageTitle>Index</PageTitle>
 
@@ -7,3 +8,18 @@
 Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
+
+<button class="btn btn-primary" @onclick="@Run">Run</button>
+
+
+@code{
+    private async Task Run()
+    {
+        await JS.InvokeVoidAsync("alert", "This is a crazy alert");
+
+        int total = await JS.InvokeAsync<int>("betterAdd", 7, 9);
+
+        await JS.InvokeVoidAsync("toastr.info", "SThe total of 7 + 9 = " + total, "Better Addition Result");
+        //await JS.InvokeVoidAsync(toastr.info("The total of 7 + 9 = " + total, "Better Addition Result", { "closeButton" = true}) );
+    }
+}
